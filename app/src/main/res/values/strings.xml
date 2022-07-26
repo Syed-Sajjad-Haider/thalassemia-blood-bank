@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Thalassemia blood bank</string>
+
+
+    <string name="whatisthalasemia">Thalassemia is a blood disorder passed down
+                through families (inherited) in which the body makes an abnormal form or inadequate
+        amount of hemoglobin.Hemoglobin is the protein in red blood cells that carries oxygen. The disorder results in large numbers of red blood cells being destroyed,
+        which leads to anemia.</string>
+
+    <string name="share_app_message">Thalasemia Blood Bank Application, Download Now</string>
+</resources>

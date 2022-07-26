@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".donorActivities.donorRegistration">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/registrationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/gradient_back">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"/>
+
+                <TextView
+                    android:id="@+id/txtlogo"
+                    android:layout_below="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donate Blood Save Life!"
+                    android:fontFamily="@font/heronew"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/txtlogin"
+                    android:layout_below="@+id/txtlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient Login"
+                    android:fontFamily="@font/heronew"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/backcurver">
+
+                <EditText
+                    android:id="@+id/edittxtpateintPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="132dp"
+                    android:inputType="number"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="Phone number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+
+                <EditText
+                    android:id="@+id/edittxtpateintPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/edittxtpateintPhone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_input"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/showpasscheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Password"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/heronew"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/edittxtpateintPass"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnpateintLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showpasscheck"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/gradient_back"
+                    android:fontFamily="@font/heronew"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtgotoreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnpateintLogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Dont have account? Sign Up"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".donorActivities.donorProfile">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layouttopshimmer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradient_back">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER NAME"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/heronew"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="200dp"
+            android:layout_below="@id/layouttopshimmer"
+            android:id="@+id/layoutshimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFatherNamedonorshiimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Father name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardFatherNamedonorshiimmer"
+                android:id="@+id/cardGenderdonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Gender"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardGenderdonorshimmer"
+                android:id="@+id/cardDOBdonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Date of birth"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardDOBdonorshimmer"
+                android:id="@+id/cardphoneNodonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Phone number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardphoneNodonorshimmer"
+                android:id="@+id/cardAddressDonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardAddressDonorshimmer"
+                android:id="@+id/cardbloodGroupDonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="Blood Group"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/cardbloodGroupDonorshimmer"
+                android:id="@+id/cardHBleveldonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="20dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/heronew"
+                    android:text="HB Level"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_below="@id/cardHBleveldonorshimmer"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/heronew"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Edit Profile"
+                android:background="@drawable/gradient_back"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layouttop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/gradient_back">
+
+        <TextView
+            android:id="@+id/txtUserNamedonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER NAME"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/heronew"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layouttop"
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFatherNamedonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtfatherNamedonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Father name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardFatherNamedonor"
+            android:id="@+id/cardGenderdonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtGenderdonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Gender"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardGenderdonor"
+            android:id="@+id/cardDOBdonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtDOBDonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Date of birth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardDOBdonor"
+            android:id="@+id/cardphoneNodonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtPhoneNodonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Phone number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardphoneNodonor"
+            android:id="@+id/cardAddressDonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtAddressDonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardAddressDonor"
+            android:id="@+id/cardbloodGroupDonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtbloodGroupDonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="Blood Group"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/cardbloodGroupDonor"
+            android:id="@+id/cardHBleveldonor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <TextView
+                android:id="@+id/txtHBLevelDonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heronew"
+                android:text="HB Level"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btneditProfile"
+                android:layout_below="@id/layout2"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/heronew"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Edit Profile"
+                android:background="@drawable/gradient_back"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

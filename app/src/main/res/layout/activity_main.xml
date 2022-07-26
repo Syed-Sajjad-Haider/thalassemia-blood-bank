@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".donorActivities.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splashimg"/>
+
+    <RelativeLayout
+        android:id="@+id/mainlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-37dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngotoDonor"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/gradient_back"
+            android:fontFamily="@font/heronew"
+            android:text="Are you donor?"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngotopatients"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/btngotoDonor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/gradient_back"
+            android:fontFamily="@font/heronew"
+            android:text="Are you patient?"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/mainlay"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/splsh2"
+        tools:ignore="NotSibling" />
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idlayoutk"
+    android:background="#FFFF"
+    tools:context=".donorActivities.VerificationActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lineartextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="-25dp"
+            android:fontFamily="@font/heronew"
+            android:includeFontPadding="false"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We've sent a 6-digit code to your phone number "
+            android:textSize="20dp"
+            android:fontFamily="@font/heronew"
+            android:padding="15dp"
+            android:textColor="#b5a8a8"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <EditText
+            android:hint="Enter OTP"
+            android:id="@+id/verification_code_entered_by_user"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/heronew"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:background="@drawable/custom_input"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/heronew"
+            android:hint="Resend code in "
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/gradient_back"
+            android:id="@+id/verify_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_width="match_parent"
+            android:textColor="#ffff"
+            android:fontFamily="@font/heronew"
+            android:textStyle="bold"
+            android:text="Verify" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/gradient_back"
+            android:id="@+id/resend_verifycode_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:layout_width="match_parent"
+            android:textColor="#ffff"
+            android:fontFamily="@font/heronew"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="RESEND" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

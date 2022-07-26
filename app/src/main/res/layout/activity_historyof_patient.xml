@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/heronew"
+            android:text="Add History"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittextDonorName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="5dp"
+            android:hint="Donor Name"
+            android:padding="16dp" />
+
+
+        <EditText
+            android:layout_below="@id/edittextDonorName"
+            android:id="@+id/edittextDateoftransfusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Date of transfusion"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:layout_below="@id/edittextDateoftransfusion"
+            android:id="@+id/editPlaceofTransfusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Place of Transfusion"
+            android:inputType="text"
+            android:padding="16dp" />
+
+
+        <ImageView
+            android:id="@+id/imgPictureofHistory"
+            android:layout_below="@id/editPlaceofTransfusion"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:src="@drawable/upload"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/custom_input"
+            />
+
+        <LinearLayout
+            android:layout_below="@id/imgPictureofHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Add"
+                android:fontFamily="@font/heronew"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_back"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCheckHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Check History"
+                android:fontFamily="@font/heronew"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_back"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

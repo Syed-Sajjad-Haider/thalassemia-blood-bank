@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFF"
+    tools:context=".Activity.phonelogin">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lineartextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your mobile number"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="-25dp"
+            android:fontFamily="@font/heronew"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your mobile number, to create an account or log in"
+            android:textSize="20dp"
+            android:fontFamily="@font/heronew"
+            android:padding="15dp"
+            android:textColor="#b5a8a8"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--  <LinearLayout
+          android:layout_below="@id/lineartextlayout"
+          android:layout_width="350dp"
+          android:layout_height="200dp"
+          android:gravity="center_horizontal"
+          android:layout_centerHorizontal="true"
+          android:padding="10dp">-->
+
+    <EditText
+        android:layout_below="@id/lineartextlayout"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/call"
+        android:drawablePadding="10dp"
+        android:id="@+id/editText_carrierNumber"
+        android:layout_gravity="center_vertical"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/heronew"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHint="#cdcdcd" />
+    <!-- </LinearLayout>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGotoVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Continue With Phone Number"
+        android:fontFamily="@font/heronew"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:textSize="16dp"
+        android:background="@drawable/gradient_back"
+        android:onClick="gotoVerify"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

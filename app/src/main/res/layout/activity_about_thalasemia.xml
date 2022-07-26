@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".donorActivities.aboutThalasemia">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtWhatisThalasemiaHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/heronew"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="What is Thalassemia?"/>
+
+            <TextView
+                android:layout_below="@id/txtWhatisThalasemiaHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="@font/heronew"
+                android:textColor="#805050"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="viewStart"
+                android:text="@string/whatisthalasemia"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/card1"
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCausesHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/heronew"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Causes?"/>
+
+            <TextView
+                android:layout_below="@id/txtCausesHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="@font/heronew"
+                android:textColor="#805050"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="viewStart"
+                android:text="Hemoglobin is made of two proteins: \n\n
+Alpha globin
+\n
+Beta globin
+\n\nThalassemia occurs when there is a defect in a gene that helps control production of one of these proteins.
+\n\nThere are two main types of thalassemia:
+\n\nAlpha thalassemia occurs when a gene or genes related to the alpha globin protein are missing or changed (mutated).\n\nBeta thalassemia occurs when similar gene defects affect production of the beta globin protein.\n\nAlpha thalassemias occur most often in people from Southeast Asia, the Middle East, China, and in those of African descent.\n\nBeta thalassemias occur most often in people of Mediterranean origin.\n\nTo a lesser extent, Chinese, other Asians, and African Americans can be affected.
+\n\nThere are many forms of thalassemia.
+\n\nEach type has many different subtypes. Both alpha and beta thalassemia include the following two forms:
+\n\nThalassemia major\nThalassemia minor
+\n\nYou must inherit the gene defect from both parents to develop thalassemia major.
+\n\nThalassemia minor occurs if you receive the faulty gene from only one parent. People with this form of the disorder are carriers of the disease. Most of the time, they do not have symptoms.
+\n\nBeta thalassemia major is also called Cooley anemia.
+\n\nRisk factors for thalassemia include:
+\n\nAsian, Chinese, Mediterranean, or African American ethnicity
+Family history of the disorder Treatment
+Collapse Section Treatment has been expanded.\n\nTreatment for thalassemia major often involves regular blood transfusions and folate supplements.
+\n\nIf you receive blood transfusions, you should not take iron supplements. Doing so can cause a high amount of iron to build up in the body, which can be harmful.
+\n\nPeople who receive a lot of blood transfusions need a treatment called chelation therapy. This is done to remove excess iron from the body.
+\n\nA bone marrow transplant may help treat the disease in some people, especially children."/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

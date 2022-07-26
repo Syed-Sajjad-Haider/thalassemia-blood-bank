@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/heronew"
+            android:text="Post Blood Request"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittextPateintName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="5dp"
+            android:hint="Pateint Name"
+            android:padding="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/droplayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/edittextPateintName"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/selectBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/heronew"
+                android:text="Select Blood Group"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black" />
+
+            <Spinner
+                android:id="@+id/bloodgroupDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectBloodGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_input"
+                android:spinnerMode="dropdown"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_below="@id/droplayout"
+            android:id="@+id/edittextHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Hospital Name"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:layout_below="@id/edittextHospital"
+            android:id="@+id/edittextHBLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:hint="HB Level"
+            android:inputType="text"
+            android:padding="16dp" />
+
+        <EditText
+            android:layout_below="@id/edittextHBLevel"
+            android:id="@+id/edittextContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#CDC3C3"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_below="@id/edittextContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnpostBloodRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Post"
+                android:fontFamily="@font/heronew"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_back"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnshowPostedRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Show posted Request"
+                android:fontFamily="@font/heronew"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_back"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

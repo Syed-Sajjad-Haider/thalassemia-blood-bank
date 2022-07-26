@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "192095356020",
+    "firebase_url": "https://thalassemia-blood-bank-71ec3-default-rtdb.firebaseio.com",
+    "project_id": "thalassemia-blood-bank-71ec3",
+    "storage_bucket": "thalassemia-blood-bank-71ec3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192095356020:android:d045a9d0e4746a9e2afd21",
+        "android_client_info": {
+          "package_name": "com.techbuddies.thalassemiabloodbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192095356020-s5ep0cu8msf2obv9i20c7mh704mu4qhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techbuddies.thalassemiabloodbank",
+            "certificate_hash": "02376d362a16d566c995ca63091dc1fa56c981ca"
+          }
+        },
+        {
+          "client_id": "192095356020-robvlsif1jpm1gig8bd1qmgjcs8m22to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxZth6tomJeQRU0QXPQXP1l30zyJhfLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192095356020-robvlsif1jpm1gig8bd1qmgjcs8m22to.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
